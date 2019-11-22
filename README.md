@@ -10,6 +10,10 @@ Here are the list of updates I made:
 - Removing Dots onclick fn
 - [Updating Dots style](https://github.com/sag1v/react-elastic-carousel/issues/24)
 
+### TODOs
+- [ ] Infinite looping
+- [ ] Control items visible on scroll when more than one items are visible on the screen at a time.
+
 #### Apart from these, rest all feature remain the same. Use below npm package to use this.
 
 ## Install
