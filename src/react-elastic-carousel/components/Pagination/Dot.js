@@ -3,21 +3,20 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import { cssPrefix } from "../../utils/helpers";
 
-const boxShadow = "0 0 1px 2px rgba(0, 0, 0, 0.5)";
-const activeBoxShadow = "0 0 1px 3px rgba(103,58,183,1)";
-const hoveredBoxShadow = "0 0 1px 3px rgba(103,58,183,.5)";
+const boxShadow = "0 0 0px 1px #45689a";
+const activeBoxShadow = "0 0 0px 1px #45689a";
+const hoveredBoxShadow = "0 0 0px 1px #45689a";
 
 const Dot = styled.div`
   transition: all 250ms ease;
-  margin: 5px;
-  background-color: ${({ active }) =>
-    active ? "rgba(103,58,183,.5)" : "transparent"};
+  margin: 3px;
+  background-color: ${({ active }) => (active ? "#45689a" : "transparent")};
   font-size: 1.3em;
   content: "";
-  height: 10px;
+  height: 2px;
   width: 10px;
   box-shadow: ${({ active }) => (active ? activeBoxShadow : boxShadow)};
-  border-radius: 50%;
+  border-radius: 4px;
   &:hover {
     cursor: pointer;
     box-shadow: ${({ active }) =>
