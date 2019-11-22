@@ -1,5 +1,5 @@
 {
-  "name": "sns-react-elastic-carousel",
+  "name": "react-elastic-carousel",
   "version": "0.3.0",
   "description": "A flexible and responsive carousel component for react",
   "author": "SNS",
@@ -15,7 +15,6 @@
   "scripts": {
     "lint:fix": "eslint src/**/*.js --fix",
     "lint:watch": "esw --watch --fix src/**/*.js",
-    "test": "cross-env CI=1 react-scripts test --env=jsdom",
     "test:watch": "react-scripts test --env=jsdom",
     "prebuild": "yarn run lint:fix",
     "build": "rollup -c",
