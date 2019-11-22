@@ -30,8 +30,7 @@ Pagination.defaultProps = {
 
 Pagination.propTypes = {
   numOfPages: PropTypes.number.isRequired,
-  activePage: PropTypes.number.isRequired,
-  onClick: PropTypes.func
+  activePage: PropTypes.number.isRequired
 };
 
 export default Pagination;
