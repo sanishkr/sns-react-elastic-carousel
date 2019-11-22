@@ -1,5 +1,5 @@
 {
-  "name": "react-elastic-carousel",
+  "name": "sns-react-elastic-carousel",
   "version": "0.3.0",
   "description": "A flexible and responsive carousel component for react",
   "author": "SNS",
@@ -17,7 +17,7 @@
     "lint:watch": "esw --watch --fix src/**/*.js",
     "test:watch": "react-scripts test --env=jsdom",
     "prebuild": "yarn run lint:fix",
-    "build": "rollup -c",
+    "build": "yarn run prebuild",
     "prepare": "yarn run build",
     "deploy": "gh-pages -d demo",
     "docz:dev": "concurrently -r -k -s all \"yarn run test:watch\" \"docz dev\" \"yarn run lint:watch\"",
