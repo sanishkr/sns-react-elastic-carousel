@@ -12,12 +12,12 @@ const Indicators = styled.div`
 
 class Pagination extends React.Component {
   render() {
-    const { numOfPages, activePage, onClick } = this.props;
+    const { numOfPages, activePage } = this.props;
     const pages = numberToArray(numOfPages);
     return (
       <Indicators className={cssPrefix("pagination")}>
         {pages.map((item, i) => (
-          <Dot key={i} id={i} active={i === activePage} onClick={onClick} />
+          <Dot key={i} id={i} active={i === activePage} />
         ))}
       </Indicators>
     );
