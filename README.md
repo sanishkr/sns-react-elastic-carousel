@@ -1,9 +1,31 @@
 
-# react-elastic-carousel
+# sns-react-elastic-carousel
+
+
+**Note**: This is a forked repo from https://github.com/sag1v/react-elastic-carousel. So, all usage are similar to that. 
+
+Here are the list of updates I made:
+- [Removing default margin to SliderContainer](https://github.com/sag1v/react-elastic-carousel/issues/23)
+- [Updating to new way of attrs in styled-components](https://github.com/sag1v/react-elastic-carousel/issues/25)
+- Removing Dots onclick fn
+- [Updating Dots style](https://github.com/sag1v/react-elastic-carousel/issues/24)
+
+#### Apart from these, rest all feature remain the same. Use below npm package to use this.
+
+## Install
+
+```bash
+npm install --save sns-react-elastic-carousel
+```
+
+***
+#### Most of the documentation and demo below is from parent repo. 
+#### Credit to [sag1v](https://github.com/sag1v)
+***
 
 > A flexible and responsive carousel component for react 
 
-[![NPM](https://img.shields.io/npm/v/react-elastic-carousel.svg)](https://www.npmjs.com/package/react-elastic-carousel) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/sns-react-elastic-carousel.svg)](https://www.npmjs.com/package/sns-react-elastic-carousel) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ### Why do we need yet another carousel component?
 - **Element resize support (true responsiveness)**  
@@ -16,17 +38,11 @@
 
 ## [Live Demos & Docs](https://sag1v.github.io/react-elastic-carousel/)
 
-## Install
-
-```bash
-npm install --save react-elastic-carousel
-```
-
 ## Usage
 
 ```jsx
 import React, { Component } from 'react';
-import Carousel from 'react-elastic-carousel';
+import Carousel from 'sns-react-elastic-carousel';
 
 class App extends Component {
   state = {
@@ -51,13 +67,13 @@ class App extends Component {
 ```
 
 ## Playground
-[![Edit react-elastic-carousel](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/21o46mkwnr)
+[![Edit sns-react-elastic-carousel](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/21o46mkwnr)
 
 ## Development
 
 ```console 
-git clone https://github.com/sag1v/react-elastic-carousel.git
-cd react-elastic-carousel
+git clone https://github.com/sanishkr/sns-react-elastic-carousel.git
+cd sns-react-elastic-carousel
 yarn
 yarn docz:dev
 ```
@@ -66,5 +82,5 @@ The application is running at http://localhost:8888
 
 ## License
 
-MIT © [sag1v](https://github.com/sag1v)
+MIT ©
 
