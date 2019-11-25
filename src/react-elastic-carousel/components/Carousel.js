@@ -188,8 +188,9 @@ class Carousel extends React.Component {
       /* based on slider container's width, get num of items to show
       * and calculate child's width (and update it in state)
       */
-      const visibleItems = this.getNumOfVisibleItems();
-      const childWidth = verticalMode ? width : width / visibleItems;
+      // const visibleItems = this.getNumOfVisibleItems();
+      // const childWidth = verticalMode ? width : width / visibleItems;
+      const childWidth = verticalMode ? width : width / 1;
       this.setState(
         state => ({ childWidth }),
         () => {
