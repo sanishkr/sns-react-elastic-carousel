@@ -131,6 +131,7 @@ class Carousel extends React.Component {
     if (currentBreakPoint) {
       visibleItems = currentBreakPoint.itemsToShow;
     }
+    visibleItems = 1;
     return visibleItems;
   };
 
@@ -188,9 +189,9 @@ class Carousel extends React.Component {
       /* based on slider container's width, get num of items to show
       * and calculate child's width (and update it in state)
       */
-      // const visibleItems = this.getNumOfVisibleItems();
-      // const childWidth = verticalMode ? width : width / visibleItems;
-      const childWidth = verticalMode ? width : width / 1;
+      const visibleItems = this.getNumOfVisibleItems();
+      const childWidth = verticalMode ? width : width / visibleItems;
+      // const childWidth = verticalMode ? width : width / 1;
       this.setState(
         state => ({ childWidth }),
         () => {
